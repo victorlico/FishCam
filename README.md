@@ -111,6 +111,10 @@ Go to the folder /home/pi/Desktop/FishCam/script/
 2.
 Open the file FishCamID.config with a text editor.
 3.
+
+sudo apt-get install python3-pip
+sudo apt-get install python3-scipy libportaudio2
+pip3 install sounddevice soundfile
 Type the FishCam ID, save, and close the text editor. By default FishCam ID is set to FishCam01.
 6.4 Camera settings
 All the camera settings are defined in the python script captureVideo.py located in the folder /home/pi/Desktop/FishCam/script/. To change the settings, open the script captureVideo.py with a text editor and adjust the parameters defined in the function initVideoSettings(). For more information about the different parameters, refer to the documentation of the picamera library (https://picamera.readthedocs.io).
